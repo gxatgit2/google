@@ -1,6 +1,9 @@
 Notes:
 
-VPN using ShadowSocks
-
+VPN using ShadowSocks:
 https://hiddenproxy.github.io/blog/windows.html 
 https://www.lvnet.co/subscribe/3419/jpkSGlVFW8b/ssr/ 
+
+ServiceMesh：the microservice in post kubernetes:
+https://www.servicemesher.com/istio-handbook/intro/service-mesh-the-microservices-in-post-kubernetes-era.html
+https://jimmysong.io/istio-handbook/preface/service-mesh-the-microservices-in-post-kubernetes-era.html
