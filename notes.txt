@@ -1,0 +1,16 @@
+kubeadm join 192.168.199.132:6443 --token mi47tp.sogfkhfczjosa8c3 \
+    --discovery-token-ca-cert-hash sha256:ea07de8360cfa22b6c021f5fd67858a86bf370cffdef033f8663a15f2b602ee1
+
+
+kubectl get pods -n kube-system -o wide
+kubectl get services -n kube-system
+kubectl get deployment kubernetes-dashboard -n kube-system
+netstat -ntlp|grep 30001
+kubectl create -f kubernetes-dashboard.yaml
+Dashboard Service内容加入nodePort： 30001和type: NodePort两项内容，将Dashboard访问端口映射为节点端口，以供外部访问
+
+kubectl create deployment nginx --image=nginx
+kubectl expose deployment nginx --port=80 --type=NodePort
+kubectl get pod,svc
+
+
